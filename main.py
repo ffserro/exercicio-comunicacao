@@ -7,6 +7,7 @@ texto = st.text_area(label='Digite aqui a mensagem a ser convertida:')
 enviar = st.button('Enviar')
 
 if enviar:
+    texto = texto.upper()
     texto = texto.replace(' É ', ' EH ')
     texto = texto.replace(' E ', ' ET ')
     texto = texto.replace('Á ', 'AH ')
