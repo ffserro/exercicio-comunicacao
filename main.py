@@ -37,7 +37,9 @@ texto = texto.replace('(', ' PRT ')
 texto = texto.replace(')', ' PRT ')
 texto = texto.replace('  ', ' ')
 
-if st.button('Enviar'):
+enviar = st.button('Enviar')
+
+if enviar:
     st.rerun()
 
 
