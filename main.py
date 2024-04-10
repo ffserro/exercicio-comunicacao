@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title('EXERCÍCIO DE COMUNICAÇÃO DO TUBARÃO MAKÃO')
 
-texto = st.text_area(label='Digite aqui a mensagem a ser convertida:', value="", on_change=st.rerun)
+texto = st.text_area(label='Digite aqui a mensagem a ser convertida:', value="")
 
 while True:
     try:
@@ -36,6 +36,9 @@ texto = texto.replace('%', 'PCT')
 texto = texto.replace('(', ' PRT ')
 texto = texto.replace(')', ' PRT ')
 texto = texto.replace('  ', ' ')
+
+if st.button('Enviar'):
+    st.rerun()
 
 
 st.write('Resultado: ')
