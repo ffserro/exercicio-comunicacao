@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title('EXERCÍCIO DE COMUNICAÇÃO DO TUBARÃO MAKÃO')
 
-texto = st.text_area(label='Digite aqui a mensagem a ser convertida:', value="")
+texto = st.text_area(label='Digite aqui a mensagem a ser convertida:', value="", on_change=st.rerun)
 
 while True:
     try:
